@@ -1,0 +1,185 @@
+.navbar{
+    width: 99%;
+    /* background-color: aquamarine; */
+    height: 50px;
+    padding: 10px;
+}
+.navbarWrapper{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px; 
+    display: flex;
+    justify-content: space-between; 
+     
+}
+.navbarLeft{
+    width: 23%;
+    height: 50px;
+    /* background-color: blueviolet; */
+    /* gap: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+.navLogo{
+    /* width: 40%; */
+    height: 50px;
+    /* background-color: rgb(190, 120, 255); */
+    font-size: 2.3rem;
+    letter-spacing: .2rem;
+    color: rgb(232, 0, 0);
+    font-weight: 700;
+    /* margin-left: 1vh; */
+    /* text-align: center; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navTime{
+    /* width: 40%; */
+    height: 50px;
+    cursor:default;
+    /* background-color: rgb(190, 120, 255); */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* text-align: center; */
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+
+.navbarRight{
+  
+    width: 30%;
+    
+    height: 50px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navSearch {
+    flex: 2;
+    /* width: 40%; */
+    height: 40px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navSearchInput{
+    height: 70%;
+    width: 100%;
+    outline: none;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border: none;
+    cursor:text ;
+}
+.navSearchInput::placeholder{
+    color: white;
+    padding-left: .5rem;
+    letter-spacing: .1rem;
+}
+.navSearchSpan{
+    color: white;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.navProfile {
+    /* width: 20%; */
+    flex: 1;
+    height: 50px;
+    /* background-color: rgb(190, 120, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navProfileImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.navLogout {
+    /* flex: 1; */
+    font-weight: 400;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    width: 25%;
+    height: 50px;
+    background-color: rgb(223, 0, 0);
+    /* background-color: rgb(42, 121, 121); */
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+}
+.navLogout:hover{
+    background-color: rgb(255, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+ .navTime{
+    display: none;
+ }
+.navbarRight{
+    width: 50%;
+    gap: 10%;
+    
+}
+.navbarLeft{
+    width: 40%;
+}
+
+
+.navProfile{
+    display: none;
+}
+.navLogout{
+    /* flex: 1; */
+    margin-right: 8%;
+    width: 20%;
+    height: 42px;
+}
+
+}
+@media (max-width:450px) {
+    .navLogout{
+        margin-right: 8%;
+        width: 21%;
+        height: 35px;
+        font-size: 1rem;
+    }
+    .navLogo{
+        font-size: 1.6rem;
+    }
+    .navSearch{
+      height: 39px;
+
+    }
+        .navbarLeft {
+            width: 40%;
+        }
+  
+
+}
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+    .navbarLeft{
+        width: 27%;
+    }
+        .navTime {
+            display: none;
+        }
+}

@@ -1,0 +1,142 @@
+.rightbar {
+  flex: 1;
+  position: relative;
+  /* background-color: rgb(3, 84, 84); */
+}
+.rightbarWrapper::-webkit-scrollbar {
+  display: none;
+}
+.rightbarWrapper {
+  /* background-color: blueviolet; */
+  /* height: 100%; */
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 85vh;
+}
+.slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.slide::-webkit-scrollbar {
+  display: none;
+}
+
+.rightbarRow {
+  position: relative;
+  /* background-color: cadetblue; */
+  width: 60%;
+  height: 13vh;
+
+  /* background-image: url('https://www.joblo.com/wp-content/uploads/2022/08/hocus-pocus-2-400x600.jpg'); */
+  overflow: hidden;
+  transition: 0.2s all ease-in-out;
+}
+.rightbarRowImg {
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.rightbarRow:hover .rightbarRowImgHover {
+  visibility: visible;
+}
+.rightbarRow:hover {
+  transform: scale(1.2);
+  z-index: 900;
+}
+
+.rightbarRowImgHover {
+  /* transition: .2s all ease-in-out; */
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.568);
+  visibility: hidden;
+}
+.rightbarRowSlider {
+  width: 60%;
+  height: 8%;
+  /* position: fixed; */
+  /* top: 0; */
+  background-color: rgba(180, 19, 51, 0.844);
+}
+.arrowUp {
+  background-color: rgba(194, 194, 194, 0.632);
+  /* transform: scale(30deg); */
+  position: absolute;
+
+  top: 90%;
+  left: 45%;
+  transform: rotate(90deg);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.arrowDown {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: rotate(90deg);
+  height: 40px;
+  width: 40px;
+  background-color: rgba(195, 195, 195, 0.63);
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .rightbar {
+    height: max-content;
+    overflow: scroll;
+    margin-top: 24px;
+  }
+  .rightbar::-webkit-scrollbar {
+      display: none;
+  }
+  .rightbarWrapper {
+    height: max-content;
+    width: max-content;
+
+    /* position: absolute; */
+    /* top:-50px; */
+    overflow: scroll;
+  }
+  .slide {
+    display: flex;
+    /* width: 100vh; */
+
+    flex-direction: row;
+  }
+  .rightbarRow {
+    /* display: flex; */
+    width: 15vh;
+  }
+
+  .rightbarRow:hover {
+    width: 18vh;
+
+    transform: scale(1.2);
+    z-index: 1000;
+  }
+}
+@media (max-width: 450px) {
+  .rightbar{
+    margin-top: 24px;
+  }
+
+}

@@ -1,0 +1,53 @@
+.home {
+  padding: 10px;
+}
+.mid {
+  /* background-color: blue; */
+  margin-top: 2%;
+  width: 100%;
+  /* height: 100%; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.downfooter {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .home {
+    padding: 0;
+  }
+  .mid {
+    flex-direction: column;
+    padding: 0;
+    /* margin: 0; */
+  }
+  .downfooter {
+    padding-top: 10px;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(186, 9, 9);
+  }
+  .downFooterLogo {
+    color: rgb(206, 206, 206);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .divIcon {
+    display: flex;
+    gap: 20px;
+
+    font-size: 3px !important;
+  }
+  .hrLine {
+    width: 100%;
+    height: 2px;
+    border: black;
+    background-color: black;
+  }
+}

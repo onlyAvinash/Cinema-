@@ -1,0 +1,161 @@
+.main {
+  overflow-y: hidden;
+  flex: 2;
+  /* height: 1000px; */
+  /* background-color: aqua; */
+  /* width: ; */
+
+  position: relative;
+}
+.mainImg {
+  overflow-y: hidden;
+  height: 85vh;
+  /* object-fit: cover; */
+  /* background-color: aqua; */
+}
+/* .mainImgPic{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    /* background: linear-gradient() ur() cover; */
+/* background: rgba(0, 0, 0, 0); */
+/* } */
+/* .mainImg::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgb(0, 0, 0) 100%);
+    margin-top: -380px;
+    margin-left: -310px;
+    transform: rotate(-90deg);
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+.mainImg::before{
+
+    display: block;
+    position: absolute;
+     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgb(0, 0, 0) 100%); 
+    margin-top: 67vh;
+   
+    transform: rotate(180deg);
+    height: 150px;
+    width: 100%;
+    content: '';
+ }  */
+
+.mainImgAbout {
+  position: absolute;
+  /* background-color: rgba(255, 0, 0, 0.231); */
+  width: 100%;
+  height: 100%;
+  /* padding: 50px; */
+  /* line-height: 5vh; */
+  top: 50%;
+  left: 5%;
+  /* font-size: 4rem; */
+  font-weight: 400;
+  color: rgb(221, 221, 221);
+  background-color: transparent;
+  /* text-shadow: 4px 3px 10px #000000; */
+}
+.mainImgAboutTitle {
+  text-shadow: 3px 1px 5px rgb(0, 0, 0);
+}
+.mainImgAboutButtons {
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.mainImgAboutButtonOne {
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  height: 2rem;
+  width: 5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+.mainImgAboutButtonOne:hover {
+  background-color: rgb(215, 215, 215);
+  width: 10rem;
+  font-weight: 600;
+  color: black;
+}
+.mainImgAboutButtonTwo {
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  height: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 7rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(215, 215, 215);
+  /* background-color:transparent; */
+}
+.mainImgAboutButtonTwo:hover {
+  background-color: transparent;
+  color: white;
+}
+.mainImgAboutDate {
+  margin-top: 10px;
+  color: rgb(148, 148, 148);
+  text-shadow: 3px 1px 5px rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.mainImgAboutDesc {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  /* line-height: 10px; */
+  width: 65%;
+  text-shadow: 3px 1px 5px rgb(0, 0, 0);
+  color: white;
+}
+.modelBox {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  box-shadow: 24;
+}
+
+
+@media (max-width: 800px) {
+  .mainImg {
+        height: 57vh;
+  }
+  .mainImgAbout {
+    top: 30%;
+    left: 3%;
+    height: max-content;
+  }
+  .modelBox {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+  }
+}
+@media (max-width: 480px) {
+    .mainImg {
+        height: 57vh;
+        margin-top: 5px;
+      }
+    .mainImgAboutTitle{
+      font-size: 1.6rem;
+      width: 57%;
+    }
+    .mainImgAboutDesc{
+      font-size: 2vh;
+    }
+         .modelBox {
+           position: absolute;
+           top: 25%;
+          left: 10%;
+           /* left: 5%; */
+         }
+}

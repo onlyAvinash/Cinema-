@@ -1,0 +1,43 @@
+.rightbarRow {
+  position: relative;
+  /* background-color: cadetblue; */
+  width: 60%;
+  height: 13vh;
+
+  /* background-image: url('https://www.joblo.com/wp-content/uploads/2022/08/hocus-pocus-2-400x600.jpg'); */
+  overflow: hidden;
+  transition: 0.2s all ease-in-out;
+}
+
+.rightbarRowImg {
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rightbarRow:hover .rightbarRowImgHover {
+  visibility: visible;
+}
+
+.rightbarRow:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+}
+
+.rightbarRowImgHover {
+  /* transition: .2s all ease-in-out; */
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.568);
+  visibility: hidden;
+}

@@ -1,0 +1,37 @@
+body{
+    background: rgb(0, 0, 0);
+
+}
+*{
+    margin:0;
+    font-family: 'Lato', sans-serif;
+    /* cursor: default; */
+    overflow-x: hidden;
+}
+/* *{
+   
+            overflow: overlay;
+    
+} */
+::-webkit-scrollbar {
+    width: 10px;
+    -moz-width: 10px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    /* background-color: #ffffff00;
+     -moz-background-color: #ffffff00; */
+    background: rgba(0, 0, 0, 0) !important;
+    /* -webkit-box-shadow: none; */
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 38, 38);
+    -moz-background-color: rgb(220, 38, 38);
+
+
+}
