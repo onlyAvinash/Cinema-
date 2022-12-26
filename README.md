@@ -1,3 +1,5 @@
+# Cinema+ is a movie app
+"This is a movie app built with React and the MovieDB API. It allows users to browse and search for popular films, view details about each movie. The app utilizes the latest technologies in web development, including React, to create a seamless and intuitive user experience. Whether you're a fan of action, drama, or comedy, this app has something for everyone. Check out the code to see how it was built and use it as inspiration for your own projects!"
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
